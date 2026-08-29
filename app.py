@@ -49,7 +49,7 @@ with col2:
     try:
       # Point to your local or deployed FastAPI instance
       response = requests.post(
-          "http://localhost:8000/predict-price", json=payload
+          "http://172.31.191.92:8000/predict-price", json=payload
       )
       if response.status_code == 200:
         res_data = response.json()
